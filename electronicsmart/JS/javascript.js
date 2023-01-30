@@ -7,6 +7,7 @@ window.onscroll = function() {navbar()};
             document.getElementById('end-nav').style.position="fixed";
             document.getElementById('end-nav').style.width="100%";
             document.getElementById('end-nav').style.top="0";
+            document.getElementById('end-nav').style.zIndex="9999";
         }
 
         else{
