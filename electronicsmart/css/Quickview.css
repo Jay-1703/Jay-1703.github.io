@@ -1,0 +1,120 @@
+.heading-2{
+    font-family:"Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;   
+    padding-top: 48px;
+}
+.heading-2 span{
+    font-size: 34px;
+}
+.slider-2{
+    height: 22rem;
+}
+.slider-data ul{
+    list-style: none;
+    margin-top: 1rem;
+}
+.slider-data a{
+    text-decoration: none;
+}
+.slider-data li{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;      
+    display: inline-flex;
+    color: #fff;
+}
+.slider-data ul :first-child{
+    color: #FDB03D;
+}
+.slider-3{
+    background-image: url('../Images/checkout.jpg');
+    background-size: 109% 117%;
+    background-repeat: no-repeat;
+    height: 273px;
+}
+.electronic-page-product-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2rem 2rem;
+    gap: 50px 30px;
+}
+.details{
+    background-color: #222222;
+}
+.details-data{
+    display: grid;
+    grid-template-columns: 40% 57%;
+    padding: 100px 0px;
+}
+.details-img{
+    height: 30rem;
+}
+.details-imgs{
+    display: inline-flex;
+    gap: 11px;
+}
+.img1{
+    background-image: url("../Images/sii1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid #4E4E4E;
+}
+.img2{
+    background-image: url('../Images/sii2.png');
+}
+.img3{
+    background-image: url('../Images/sii3.png');
+}
+.data h3{
+    font-family:"Poppins",sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;      
+    margin-bottom: 16px;
+    color: #ffff;
+}
+.price-2 p{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;   
+    padding-left: 15px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+.data ul{
+    list-style: none;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;   
+    color: #b7b7b7;
+    margin-bottom: 16px;
+}
+.data li{
+    padding-bottom: 12px;
+}
+.data-2{
+    margin: 1rem 0rem;
+}
+.data-2 i{
+    font-size: 22px;
+    color: #FDB03D;
+    padding-right: 20px;
+}
+.data-2 p{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;   
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;   
+    color: #fff;
+}
+.data-2 ul{
+    list-style:disc;
+    margin: 0rem 1rem;
+}

@@ -1,0 +1,35 @@
+.electronic-page-product-cards{
+    margin: 2rem 2rem;
+    gap: 50px 30px;
+}
+.heading-2{
+    font-family:"Poppins",sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;   
+    padding-top: 48px;
+}
+.heading-2 span{
+    font-size: 32px;
+}
+.slider-2{
+    height: 22rem;
+}
+.slider-data ul{
+    list-style: none;
+    margin-top: 1rem;
+}
+.slider-data a{
+    text-decoration: none;
+}
+.slider-data li{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;      
+    display: inline-flex;
+    color: #fff;
+}
+.slider-data ul :first-child{
+    color: #FDB03D;
+}

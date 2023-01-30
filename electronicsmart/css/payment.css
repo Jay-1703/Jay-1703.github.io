@@ -1,0 +1,151 @@
+.payment{
+    padding: 5rem 0rem;
+}
+.payment-title{
+    font-family:"Poppins",sans-serif;
+    font-size: 36px;
+    line-height: 28px;
+    font-weight: 600;   
+    padding-bottom: 48px;
+    text-align: center;
+    color: #fff;
+}
+.payment-options ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.payment-options li{
+    display:inline-flex;
+}
+.payment-options button{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 17px;
+    line-height: 25.5px;
+    font-weight: 400;   
+    text-transform: capitalize;       
+    margin-right: 11.1px;
+    padding: 14px 70px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+#cod{
+    display: block;
+}
+#cod-btn{
+    background-color: #FDB03D;
+}
+.payment-data{
+    padding: 40px 53px;
+}
+#cod h5{
+    font-family:"Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;   
+    padding-bottom: 18px;
+    color: #fff;
+}
+#cod p{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffff;   
+    margin-left: 10px;
+}
+#cod div{
+    display: inline-flex;
+}
+#cod input{
+    width: 2%;
+    margin: 0%;
+    padding: 0%;
+}
+#cd{
+    display: none;
+}
+.form label{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 16.8px;
+    line-height: 25.2px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #ffff;   
+}
+#netb{
+    display: none;
+}
+#netb h5{
+    font-family:"Poppins",sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;   
+    padding-bottom: 18px;
+    color: #fff;   
+}
+#netb ul{
+    list-style:none;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+#netb li{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #b7b7b7;      
+}
+#netb input{
+    margin: 0px 12px 20px 0px;
+}
+#netb select{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 10px;
+    color: #b7b7b7; 
+    background-color: #222222; 
+    width: 100%;
+}
+.p{
+    display: grid;
+    grid-template-columns: 58% auto;
+}
+#paypal{
+    display: none;
+}
+.paypal-img{
+    background-image: url('../Images/paypal.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 7rem;
+    width: 25rem;
+}
+.paypal-data p{
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 15.2px;
+    line-height: 27.36px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+    color: #b7b7b7; 
+}
+.paypal-data button{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #545EAF;
+    cursor: pointer;
+}
+.payment-data .form{
+    padding: 0%;
+}
