@@ -1,0 +1,106 @@
+.divider-Vertical {
+    width: 50px;
+    height: 5px;
+    background-image: -webkit-linear-gradient(45deg, #ceff1a 15%, #65ff00 65%);
+}
+.our-portfolio-title{
+    text-align: left;
+    font-family: sans-serif;
+}
+.our-portfolio-title h2{
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 600;
+    margin: 1rem 0rem;
+}
+.our-portfolio-title p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color:#8E8E8E;
+    margin: 0px 0px 32px 0px;
+}
+.btn-view{
+    font-family: sans-serif;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-radius: 0;
+    z-index: 2;
+    transition: 0.3s;
+    border: 2px solid #65ff00;
+    color: white;
+    background-color: #65ff00;
+}
+.btn-view:hover{
+    background-image: -webkit-linear-gradient(45deg, #ceff1a 15%, #65ff00 65%);
+}
+.card-featured{
+    background-image: -webkit-linear-gradient(45deg, #ceff1a 15%, #65ff00 65%);
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    margin: -0.5rem 0rem 0rem -0.5rem;
+}
+.card-featured-2{
+    margin: 10.7rem 0rem 0rem 7.5rem;
+}
+.card-featured-3{
+    margin: 1.5rem 0rem 0rem 7.5rem;
+}
+.card{
+    background-color: rgb(17, 17, 17);
+    width: 22rem;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.card:hover{
+    background-image: -webkit-linear-gradient(45deg, #ceff1a 15%, #65ff00 65%);
+    cursor: pointer;
+    margin-top: -0.5rem;
+    transition: 0.5s;
+}
+.card-body{
+    font-family: sans-serif;
+    padding: 2.5rem;
+}
+.card-body h4{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.card-body p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.card-body i{
+    font-size: 40px;
+    color: #65ff00;
+    margin-bottom: 15px;
+}
+@media (max-width: 576px) {
+    .divider-Vertical{
+        display: none;
+    }
+    .our-portfolio-title{
+        text-align: center;
+        margin: 0%;
+    }
+    .our-portfolio-title h2{
+        font-size: 40px;
+    }
+    .card{
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+    .card-body{
+        padding: 1.5rem;
+    }
+    .card-featured{
+        display: none;
+    }
+}
