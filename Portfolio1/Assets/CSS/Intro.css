@@ -37,17 +37,19 @@
     background-image: url("../Images/news-4.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 454px;
+    height: 434px;
     border-radius: 5px;
 }
 .video-img:hover{
     cursor: pointer;
+    opacity: 0.5;
 }
 .play-icon{
     font-size: 100px;
     color: #65ff00; 
-    margin-top: 10rem;
+    margin-top: 9.3rem;
     margin-left: -5rem;
+    z-index: 9999;
 }
 #divider{
     width: 1px;
