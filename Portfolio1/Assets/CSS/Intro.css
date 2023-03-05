@@ -1,0 +1,109 @@
+.intro h1{
+    font-family: sans-serif;
+    font-size: 96px;
+    line-height: 115px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(45deg, #ceff1a 15%, #65ff00 65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro p{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 16px;
+    line-height: 28.8px;
+    font-weight: 400;
+    color:#8E8E8E;
+    margin: 32px 0px;
+}
+.img{
+    background-image: url("../Images/hero-7.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0rem 4rem;
+    height: 35rem;
+}
+.institutional h2{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.institutional p{
+    color: #8E8E8E;
+}
+.video-img{
+    background-image: url("../Images/news-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 434px;
+    border-radius: 5px;
+}
+.video-img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.play-icon{
+    font-size: 100px;
+    color: #65ff00; 
+    margin-top: 9.3rem;
+    margin-left: -5rem;
+    z-index: 9999;
+}
+#divider{
+    width: 1px;
+    background-color: #65ff00;
+}
+.divider{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 6px;
+    height: 120px;
+    background-image: -webkit-linear-gradient(45deg, #ceff1a 15%, #65ff00 65%);
+}
+@media (max-width: 576px) {
+    .intro{
+        position: absolute;
+        margin: 0%;
+        text-align: center;
+    }
+    .intro h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .intro p{
+        width: 80%;
+        margin-left: 2rem;
+    }
+    .img{
+        margin: 0%;
+    }
+    .video-img{
+        height: 200px;
+    }
+    .play-icon{
+        margin: 1.5rem 0rem 0rem -4.3rem;
+    }
+    .institutional p{
+        width: 90%;
+        margin: 0rem 1rem;
+    }
+}
+@media (width: 768px) {
+    .intro{
+        margin: 0%;
+        margin: 2rem 1rem;
+    }
+    .intro h1{
+        font-size: 3.5rem;
+        line-height: 70px;
+    }
+    .intro p{
+        font-size: 2rem;
+        width: 90%;
+    }
+    .img{
+        margin: 0%;      
+        height: 30rem;
+    }
+}
