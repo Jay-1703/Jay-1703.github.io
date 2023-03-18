@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Assets/CSS/portfolio1.css">
+</head>
+
+<body>
+    <header>
+        <!-- =============================== canvas-navbar ===============================  -->
+        <nav class="navbar navbar-hide bg-body-tertiary w-100" id="mobile-navbar">
+            <div class="row px-2" id="mobilenav-items">
+                <div class="col-3 col-md-3">
+                    <h3 class="navbar-brand text-white fs-3 d-block" href="#">Leverage
+                        <p class="version fs-6 d-inline">2.1</p>
+                    </h3>
+                </div>
+                <div class="container-fluid col-auto offset-4 col-md-auto offset-md-6">
+                    <i class="fa-solid fa-magnifying-glass text-white fs-5"></i>
+                    <button class="navbar-toggler text-white" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-align-justify fs-3"></i>
+                    </button>
+                    <button class="btn btn-buynow mobile-btn-2" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z" />
+                            <path
+                                d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z" />
+                        </svg></button>
+                    <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-bg-danger" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 w-75">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link text-black fs-4" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Home
+                                        <i class="fa-solid fa-chevron-down d-inline justify-content-end"></i>
+                                    </a>
+                                    <ul class="dropdown-menu bg-transparent">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-item text-black fs-5" href="#">
+                                                Multi-page
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="dropdown-item text-black fs-5" href="#">
+                                                One-pages
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- =============================== navbar =============================== -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100" id="navbar">
+            <div class="container-fluid" id="nav-items">
+                <div class="col-lg-5 col-md-auto">
+                    <a class="navbar-brand text-white fs-3" href="#">Leverage
+                        <p class="version fs-6 d-inline">2.1</p>
+                    </a>
+                </div>
+                <div class="container collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="col col-md-auto fs-6">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menus home">
+                                <a class="nav-link" href="./index.html">
+                                    Home <i class="fa-solid fa-chevron-down icon"></i>
+                                </a>
+                            </li>
+                            <ul class="dropdown-menu bg-white submenu">
+                                <li class="multi-page"><a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            Multi-page
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu bg-white multi-page-submenu">
+                                    <li class="agency"><a class="dropdown-item d-flex" href="#">
+                                            <span class="flex-grow-1">
+                                                Agency
+                                            </span>
+                                            <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                    </li>
+                                    <ul class="dropdown-menu bg-white agency-items">
+                                        <li><a class="dropdown-item " href="#">Demo 1</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 2</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 3</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 4</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 5</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 6</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 7</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 8</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 9</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 10</a></li>
+                                    </ul>
+                                    <li class="portfolio"><a class="dropdown-item d-flex" href="#">
+                                            <span class="flex-grow-1">
+                                                Portfolio
+                                            </span>
+                                            <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                    </li>
+                                    <ul class="dropdown-menu bg-white portfolio-items">
+                                        <li><a class="dropdown-item " href="#">Demo 11</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 12</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 13</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 14</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 15</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 16</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 17</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 18</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 19</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 20</a></li>
+                                    </ul>
+                                </ul>
+                                <li class="one-pages"><a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            One-page
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu one-pages-item bg-white">
+                                    <li class="agency"><a class="dropdown-item d-flex" href="#">
+                                            <span class="flex-grow-1">
+                                                Agency
+                                            </span>
+                                            <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                    </li>
+                                    <ul class="dropdown-menu bg-white agency-items">
+                                        <li><a class="dropdown-item " href="#">Demo 1</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 2</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 3</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 4</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 5</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 6</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 7</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 8</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 9</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 10</a></li>
+                                    </ul>
+                                    <li class="portfolio"><a class="dropdown-item d-flex" href="#">
+                                            <span class="flex-grow-1">
+                                                Portfolio
+                                            </span>
+                                            <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                    </li>
+                                    <ul class="dropdown-menu bg-white portfolio-items">
+                                        <li><a class="dropdown-item " href="#">Demo 11</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 12</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 13</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 14</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 15</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 16</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 17</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 18</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 19</a></li>
+                                        <li><a class="dropdown-item " href="#">Demo 20</a></li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <li class="nav-item menus pages">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    Pages <i class="fa-solid fa-chevron-down icon"></i>
+                                </a>
+                            </li>
+                            <ul class="dropdown-menu bg-white pages-items">
+                                <li class="multi-page about"><a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            About
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu bg-white pages-items about-items">
+                                    <li class="multi-page"><a class="dropdown-item d-flex" href="#">About 1</a></li>
+                                    <li class="multi-page"><a class="dropdown-item d-flex" href="#">About 2</a></li>
+                                </ul>
+                                <li class="multi-page"><a class="dropdown-item" href="./Pages/Services.html">
+                                        Services</a>
+                                </li>
+                                <li class="multi-page"><a class="dropdown-item" href="#">
+                                        Single Services</a>
+                                </li>
+                                <li class="multi-page portfolios"><a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            Portfolio
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu bg-white pages-items portfolios-items">
+                                    <li class="multi-page"><a class="dropdown-item" href="#">Portfolio 1</a></li>
+                                    <li class="multi-page"><a class="dropdown-item" href="#">Portfolio 2</a></li>
+                                </ul>
+                                <li class="multi-page single-portfolios"><a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            Single Portfolio
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu bg-white pages-items single-portfolios-items">
+                                    <li class="multi-page"><a class="dropdown-item" href="#">Single Portfolio 1</a></li>
+                                    <li class="multi-page"><a class="dropdown-item" href="#">Single Portfolio 2</a></li>
+                                </ul>
+                                <li class="multi-page"><a class="dropdown-item" href="./Pages/Pricing.html">
+                                        Pricing</a>
+                                </li>
+                                <li class="multi-page"><a class="dropdown-item" href="#">
+                                        Contact</a>
+                                </li>
+                            </ul>
+                            <li class="nav-item menus blog">
+                                <a class="nav-link" href="#">
+                                    Blog <i class="fa-solid fa-chevron-down icon"></i>
+                                </a>
+                            </li>
+                            <ul class="dropdown-menu bg-white pages-items blog-items">
+                                <li class="multi-page blog-post"><a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            Blog Posts
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu bg-white pages-items blogpost-items">
+                                    <li class="multi-page"><a class="dropdown-item" href="#">
+                                            Blog Posts 1</a>
+                                    </li>
+                                    <li class="multi-page"><a class="dropdown-item" href="#">
+                                            Blog Posts 2</a>
+                                    </li>
+                                </ul>
+                                <li class="multi-page single-post"><a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            Single Post
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu bg-white pages-items singlepost-items">
+                                    <li class="multi-page"><a class="dropdown-item" href="#">
+                                            Single Post 1</a>
+                                    </li>
+                                    <li class="multi-page"><a class="dropdown-item" href="#">
+                                            Single Post 2</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <li class="nav-item menus extra">
+                                <a class="nav-link" href="#">
+                                    Extra <i class="fa-solid fa-chevron-down icon"></i>
+                                </a>
+                            </li>
+                            <ul class="dropdown-menu bg-white pages-items extra-items">
+                                <li class="multi-page"><a class="dropdown-item" href="#">
+                                        Preloader</a>
+                                </li>
+                                <li class="multi-page Navbar">
+                                    <a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            Navbar
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                </li>
+                                <ul class="dropdown-menu bg-white pages-items navbar-items">
+                                    <li class="multi-page"><a class="dropdown-item" href="#">
+                                            Relative </a>
+                                    </li>
+                                    <li class="multi-page"><a class="dropdown-item" href="#">
+                                            Flexible </a>
+                                    </li>
+                                    <li class="multi-page"><a class="dropdown-item" href="#">
+                                            Fixed </a>
+                                    </li>
+                                </ul>
+                                <li class="multi-page"><a class="dropdown-item" href="#">
+                                        Simple Form</a>
+                                </li>
+                                <li class="multi-page"><a class="dropdown-item" href="#">
+                                        Subscribe-Form</a>
+                                </li>
+                                <li class="multi-page multi-step">
+                                    <a class="dropdown-item d-flex" href="#">
+                                        <span class="flex-grow-1">
+                                            Multi-step-Form
+                                        </span>
+                                        <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                    </a>
+                                </li>
+                                <ul class="dropdown-menu bg-white pages-items multi-step-items">
+                                    <li class="multi-page dark-mode">
+                                        <a class="dropdown-item d-flex" href="#">
+                                            <span class="flex-grow-1">
+                                                Dark Mode
+                                            </span>
+                                            <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                        </a>
+                                    </li>
+                                    <ul class="dropdown-menu bg-white pages-items services-request-items">
+                                        <li class="multi-page">
+                                            <a class="dropdown-item" href="#">
+                                                Services Request
+                                            </a>
+                                        </li>
+                                        <li class="multi-page">
+                                            <a class="dropdown-item" href="#">
+                                                Landing Page
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <li class="multi-page light-mode">
+                                        <a class="dropdown-item d-flex" href="#">
+                                            <span class="flex-grow-1">
+                                                Light Mode
+                                            </span>
+                                            <span><i class="fa-solid fa-chevron-right"></i></a></span>
+                                        </a>
+                                    </li>
+                                    <ul class="dropdown-menu bg-white pages-items light-items">
+                                        <li class="multi-page">
+                                            <a class="dropdown-item" href="#">
+                                                Services Request
+                                            </a>
+                                        </li>
+                                        <li class="multi-page">
+                                            <a class="dropdown-item" href="#">
+                                                Landing Page
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                            <li class="nav-item  menus">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item  menus">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item  menus">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item menus">
+                                <button class="btn btn-buynow" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff-fill"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z" />
+                                        <path
+                                            d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z" />
+                                    </svg>&nbsp; buy now</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ============================ Contact-page =============================== -->
+    <div class="services">  
+        <div class="services-bg-img"></div id="img1">
+        <div class="text-center services-data">
+            <h1>Our Portfolio</h1>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center py-md-5">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-decoration-none fs-6" href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-decoration-none fs-6" href="#">Pages</a></li>
+                    <li class="breadcrumb-item"><a class="text-decoration-none fs-6" href="#"
+                            style="color:#dd1e4b">Our Portfolio</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="offset-6 divider">
+        </div>
+    </div>
+    <!-- ============================ Contact-Details =============================== -->
+    <section>
+        <div class="container text-center our-portfolio">
+            <div class="our-portfolio-title">
+                <h2>What we do</h2>
+            </div>
+            <div class="d-flex offset-md-1">
+                <ul class="list">
+                    <li class="list-item fs-4 fw-bold d-inline" id="hover-underline-animation" onclick="All()">All</li>
+                    <li class="list-item fs-4 fw-bold d-inline" id="hover-underline-animation" onclick="DesingThinking()">Desing Thinking</li>
+                    <li class="list-item fs-4 fw-bold d-inline" id="hover-underline-animation" onclick="Branding()">Branding</li>
+                    <li class="list-item fs-4 fw-bold d-inline" id="hover-underline-animation" onclick="Photography()">Photography</li>
+                    <li class="list-item fs-4 fw-bold d-inline" id="hover-underline-animation" onclick="DigitalMarketing()">Digital Marketing</li>
+                    <li class="list-item fs-4 fw-bold d-inline" id="hover-underline-animation" onclick="Technology()">Technology</li>
+                </ul>
+            </div>
+            <div class="row text-center" id="Displaycard">
+                <div class="cards col-lg-4 col-md-6 col-12" id="img1">
+                    <div class="card shadow">
+                        <div class="bg-color-div">
+                        </div>
+                        <img src="../Assets/Images/news-7-h.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-lg-4 col-md-6 col-12" id="img2">
+                    <div class="card shadow">
+                        <div class="bg-color-div"></div>
+                        <img src="../Assets/Images/news-8-h.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-lg-4 col-md-6 col-12" id="img3">
+                    <div class="card shadow">
+                        <div class="bg-color-div"></div>
+                        <img src="../Assets/Images/news-9-h.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-lg-4 col-md-6 col-12 gy-lg-5" id="img4">
+                    <div class="card shadow">
+                        <div class="bg-color-div"></div>
+                        <img src="../Assets/Images/news-10-h.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-lg-4 col-md-6 col-12 gy-lg-5" id="img5">
+                    <div class="card shadow">
+                        <div class="bg-color-div"></div>
+                        <img src="../Assets/Images/news-11-h.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards col-lg-4 col-md-6 col-12 gy-lg-5" id="img6">
+                    <div class="card shadow">
+                        <div class="bg-color-div"></div>
+                        <img src="../Assets/Images/news-12-h.jpg" alt="">
+                        <div class="card-body">
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================ Mainskills-page =============================== -->
+    <div style="background-color: rgb(17, 17, 17); padding: 5rem 0rem;">
+            <div class="container text-center text-capitalize skills">
+                <h2 class="h2">Main skills</h2>
+                <p class="col-8 offset-2 ">We see all types of projects as if they were ours. This brings us closer to our
+                    clients' projects bringing much more confidence and commitment.</p>
+            </div>
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4">
+                    <div class="col" id="skill-rate">
+                        <div class="Progress-div container">
+                            <h2 id="marketing" class="Progress"></h2>
+                        </div>
+                        <h4 class="skill-name">Marketing</h4>
+                    </div>
+                    <div class="col" id="skill-rate">
+                        <div class="Progress-div container">
+                            <h2 id="branding" class="Progress"></h2>
+                        </div>
+                        <h4 class="skill-name">Branding</h4>
+                    </div>
+                    <div class="col" id="skill-rate">
+                        <div class="Progress-div container">
+                            <h2 id="webdesing" class="Progress"></h2>
+                        </div>
+                        <h4 class="skill-name">Web Desing</h4>
+                    </div>
+                    <div class="col" id="skill-rate">
+                        <div class="Progress-div container">
+                            <h2 id="wordprass" class="Progress"></h2>
+                        </div>
+                        <h4 class="skill-name">Wordpress</h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- ============================ Let's Talk =============================== -->
+    <section>
+        <div class="our-portfolio">
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <div class="divider-Vertical">
+                    </div>
+
+                    <div class="title text-md-left">
+                        <h2 class="h2">Let's Talk?</h2>
+                        <p>Don't wait until tomorrow. Talk to one of our consultants today and learn how to start leveraging your business.</p>
+                    </div>
+                    <div>
+                        <ul class="list-unstyled">
+                            <li>
+                                <div id="process-round" class="text-center"><p class="pt-1 fs-5 fw-bold text-white">1</p></div>
+                            </li>
+                            <li>
+                                <div id="process-round-2" class="text-center"><p class="pt-1 fs-5 fw-bold text-white">2</p></div>
+                            </li>
+                            <li>
+                                <div id="process-round-3" class="text-center"><p class="pt-1 fs-5 fw-bold text-white">3</p></div>
+                            </li>
+                            <li>
+                                <div id="process-line">
+                                    <div id="inner-div"></div>
+                                </div>
+                            </li>                         
+                            <li>
+                                <div class="px-1" style="margin-top: -2rem;">
+                                    <p id="process-text" class="d-inline px-4">Personal Detailsi</p>
+                                    <p id="process-text" class="d-inline px-4">Company Budget</p>
+                                    <p id="process-text" class="d-inline px-4">Service Setup</p>
+                                </div>
+                            </li>                             
+                        </ul>
+                    </div>
+                    
+                    <form id="form">
+                        <div class="mb-3">
+                            <div class="input-group input-group-lg">
+                                <input type="email" id="email" class="form-control text-start py-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="name" class="form-control text-start py-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Name">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="password" class="form-control text-start py-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="company" class="form-control text-start py-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Company">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group input-group-lg">
+                                <input type="text" id="manager" class="form-control text-start py-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Manager">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input-group input-group-lg">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group input-group-lg">
+                                <select class="form-select" aria-label="Default select example" id="select">
+                                    <option selected>what's your budget range?</option>
+                                    <option value="1">Less then $2000</option>
+                                    <option value="2">$2000-$5000</option>
+                                    <option value="3">$5000-$10000</option>
+                                    <option value="4">$10000+</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <button class="btn btn-buynow" type="button" onclick="prev()" id="prev-btn"> prev</button>
+                                </li>
+                                <li>
+                                    <button class="btn btn-buynow" type="button" onclick="next()" id="next-btn"> next &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                      </svg></button>
+                                </li>
+                                <li>
+                                    <button class="btn btn-buynow" type="button" id="send-btn"> send &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                      </svg></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7">
+                    <div class="talk-img">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============================== Footer ================================== -->
+    <footer>
+        <section>
+            <div class="footer row row-cols-1 row-cols-md-1 row-cols-lg-4">
+                <div class="col laverage">
+                    <a href="#" class="text-decoration-none">Leverage.</a>
+                    <p>Authentic and innovative.
+                        <br>Built to the smallest detail
+                        <br>with a focus on usability
+                        <br>and performance.
+                    </p>
+                    <a href="#" class="text-decoration-none">
+                        <i class="fa-brands fa-instagram fs-3 pe-3"></i>
+                    </a>
+                    <a href="##" class="text-decoration-none">
+                        <i class="fa-brands fa-facebook-f fs-3 px-3"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <i class="fa-brands fa-linkedin-in fs-3 px-3"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <i class="fa-brands fa-twitter fs-3 px-3"></i>
+                    </a>
+                </div>
+                <div class="col get-in-touch text-white">
+                    <h4 class="text-white">Get in Touch</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-phone"></i>
+                                &nbsp; +91 7096791405
+                            </a>
+                        </li>
+                        <li class="py-3">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-envelope"></i>
+                                &nbsp; pjay41907@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-location-dot"></i>
+                                &nbsp; Khodiyar Colony, Jamnagar
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-send" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                            <path
+                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                            <path
+                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                        </svg>&nbsp; send a message</button>
+                </div>
+                <div class="col our-services">
+                    <h4 class="text-white">Our Services</h4>
+                    <ul class="list-unstyled">
+                        <li class="pb-3">Website Development</li>
+                        <li class="pb-3">Building Applications</li>
+                        <li class="pb-3">SEO & Digital Marketing</li>
+                        <li class="pb-3">Branding and Identity</li>
+                        <li class="pb-3">Digital Images & Videos</li>
+                    </ul>
+                </div>
+                <div class="col popular-tag">
+                    <h4 class="text-white">Popular Tags</h4>
+                    <ul class="list-unstyled">
+                        <li><button>Mobile</button><button>Development</button></li>
+                        <li><button>technology</button><button>app</button></li>
+                        <li><button>education</button><button>business</button></li>
+                        <li><button>health</button><button>industry</button></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div class="footer-2">
+        <div class="row">
+            <div class="col col-12 col-md-6">
+                <p>Enjoy the low price. We are tracking any intention of piracy.</p>
+            </div>
+            <div class="col col-12 col-md-6 text-md-center">
+                <p>© 2023 Portfolio is Proudly Powered by <a href="#" class="text-decoration-none">Jay Patel</a>.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/abc8e57fdb.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+   window.onscroll = function () { navbar() };
+    function navbar() {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            document.getElementById('nav-items').style.paddingTop = "1rem";
+            document.getElementById('nav-items').style.paddingBottom = "1rem";
+            document.getElementById('navbar').style.backgroundColor = "rgb(17, 17, 17)";
+
+            document.getElementById('mobilenav-items').style.paddingTop = "1.5rem";
+            document.getElementById('mobilenav-items').style.paddingBottom = "1rem";
+            document.getElementById('mobile-navbar').style.backgroundColor = "rgb(17, 17, 17)";
+        }
+        else {
+            document.getElementById('navbar').style.backgroundColor = "transparent";
+
+            document.getElementById('mobile-navbar').style.backgroundColor = "transparent";
+        }
+
+        const aboutPos = document.getElementById("about").offsetTop;
+        if (document.body.scrollTop > aboutPos || document.documentElement.scrollTop > aboutPos) {
+            document.getElementById('navbar').style.display = "none";
+        } else {
+            document.getElementById('navbar').style.display = "block";
+        }
+    }
+    function All() {
+        document.getElementById('hover-underline-animation').style.content = " ";
+        document.getElementById('hover-underline-animation').style.position = "absolute";
+        document.getElementById('hover-underline-animation').style.marginTop = "8px";
+        document.getElementById('hover-underline-animation').style.width = "10%";
+        document.getElementById('hover-underline-animation').style.height = "4px";
+        document.getElementById('hover-underline-animation').style.left = "28px";
+        document.getElementById('hover-underline-animation').style.backgroundColor = "red";
+        document.getElementById('hover-underline-animation').style.transformOrigin = "bootom right";
+        document.getElementById('img1').style.display = "block";
+        document.getElementById('img2').style.display = "block";
+        document.getElementById('img3').style.display = "block";
+        document.getElementById('img4').style.display = "block";
+        document.getElementById('img5').style.display = "block";
+        document.getElementById('img6').style.display = "block";
+    }
+    function DesingThinking(){
+        document.getElementById('img1').style.display = "none";
+        document.getElementById('img2').style.display = "none";
+        document.getElementById('img3').style.display = "none";
+        document.getElementById('img4').style.display = "block";
+        document.getElementById('img5').style.display = "block";
+        document.getElementById('img6').style.display = "block";
+    }
+    function Branding(){
+        document.getElementById('img1').style.display = "none";
+        document.getElementById('img2').style.display = "block";
+        document.getElementById('img3').style.display = "none";
+        document.getElementById('img4').style.display = "none";
+        document.getElementById('img5').style.display = "block";
+        document.getElementById('img6').style.display = "block";
+    }
+    function Photography(){
+        document.getElementById('img1').style.display = "block";
+        document.getElementById('img2').style.display = "none";
+        document.getElementById('img3').style.display = "none";
+        document.getElementById('img4').style.display = "block";
+        document.getElementById('img5').style.display = "none";
+        document.getElementById('img6').style.display = "block";
+    }
+    function DigitalMarketing(){
+        document.getElementById('img1').style.display = "block";
+        document.getElementById('img2').style.display = "none";
+        document.getElementById('img3').style.display = "block";
+        document.getElementById('img4').style.display = "none";
+        document.getElementById('img5').style.display = "none";
+        document.getElementById('img6').style.display = "block";
+    }
+    function Technology(){
+        document.getElementById('img1').style.display = "block";
+        document.getElementById('img2').style.display = "block";
+        document.getElementById('img3').style.display = "block";
+        document.getElementById('img4').style.display = "none";
+        document.getElementById('img5').style.display = "none";
+        document.getElementById('img6').style.display = "none";
+    }
+
+    var counter = 1;
+    const marketinginterval = setInterval(countingMarketing,120);
+    const brandinginterval = setInterval(countingBranding,120);
+    const webdesinginterval = setInterval(countingWebdesing,120);
+    const wordpressinterval = setInterval(countingWordpress,120);
+    
+    function countingMarketing(){
+            counter+=1;
+            document.getElementById('marketing').innerText = counter + "%";
+            if(counter >= 42){
+                clearInterval(marketinginterval);
+            }
+    }
+    function countingBranding(){
+            counter+=1;
+            document.getElementById('branding').innerHTML = counter + "%";
+            if(counter >= 60){
+                clearInterval(brandinginterval);
+            }
+    }
+    function countingWebdesing(){
+            counter+=1;
+            document.getElementById('webdesing').innerHTML = counter + "%";
+            if(counter >= 84){
+                clearInterval(webdesinginterval);
+            }
+    }
+    function countingWordpress(){
+            counter+=1;
+            document.getElementById('wordprass').innerHTML = counter + "%";
+            if(counter >= 100){
+                clearInterval(wordpressinterval);
+            }
+    }
+    document.getElementById('company').style.display = "none";
+    document.getElementById('manager').style.display = "none";
+    document.getElementById('select').style.display = "none";
+    document.getElementById('exampleFormControlTextarea1').style.display = "none";
+    document.getElementById('send-btn').style.display = "none";
+
+    let count = 0;
+    console.log(count);
+
+    function next(){
+        var email = document.getElementById('email').value;
+        var name = document.getElementById('name').value;
+        var password = document.getElementById('password').value;
+
+        if (count == 0) {
+            if(email != "" && name != "" && password != "")
+            {
+                document.getElementById('email').style.border = "1px solid green";
+                document.getElementById('name').style.border = "1px solid green";
+                document.getElementById('password').style.border = "1px solid green";
+                document.getElementById('inner-div').style.width = "50%";
+                document.getElementById('process-round-2').style.backgroundColor = "#dd1e4b";
+                document.getElementById('prev-btn').style.display = "block";
+                document.getElementById('prev-btn').style.position = "absolute";
+                document.getElementById('next-btn').style.marginLeft = "7rem";
+                document.getElementById('company').style.display = "block";
+                document.getElementById('manager').style.display = "block";
+                document.getElementById('select').style.display = "block";
+                document.getElementById('email').style.display = "none";
+                document.getElementById('password').style.display = "none";
+                document.getElementById('name').style.display = "none";
+                document.getElementById('exampleFormControlTextarea1').style.display = "none";
+                count = 1;
+                console.log(count);
+            }
+            else{
+                document.getElementById('email').style.border = "1px solid red";
+                document.getElementById('name').style.border = "1px solid red";
+                document.getElementById('password').style.border = "1px solid red";
+            }     
+        }
+        else if (count == 1) {
+            var manager = document.getElementById('manager').value;
+            var company = document.getElementById('company').value;
+            var select = document.getElementById('select').value;
+
+            if(manager != "" && company != "" && select != "")
+            {
+                document.getElementById('email').style.border = "1px solid green";
+                document.getElementById('name').style.border = "1px solid green";
+                document.getElementById('password').style.border = "1px solid green";
+                document.getElementById('inner-div').style.width = "80%";
+                document.getElementById('process-round-3').style.backgroundColor = "#dd1e4b";
+                document.getElementById('company').style.display = "none";
+                document.getElementById('manager').style.display = "none";
+                document.getElementById('select').style.display = "none";
+                document.getElementById('email').style.display = "none";
+                document.getElementById('password').style.display = "none";
+                document.getElementById('name').style.display = "none";
+                document.getElementById('exampleFormControlTextarea1').style.display = "block";
+                document.getElementById('send-btn').style.display = "block";
+                document.getElementById('send-btn').style.position = "absolute";
+                document.getElementById('send-btn').style.marginLeft = "7rem";
+                document.getElementById('next-btn').style.display = "none";
+                count = 2;
+                console.log(count);
+            }
+            else{
+                document.getElementById('manager').style.border = "1px solid red";
+                document.getElementById('company').style.border = "1px solid red";
+                document.getElementById('select').style.border = "1px solid red";
+            }     
+            
+        } 
+        else{
+            alert();
+        }
+    }
+    function prev(){
+        if (count == 1) {
+            document.getElementById('inner-div').style.width = "20%";
+            document.getElementById('process-round-2').style.backgroundColor = "#e5e5e5";
+            document.getElementById('prev-btn').style.display = "none";
+            document.getElementById('prev-btn').style.position = "absolute";
+            document.getElementById('next-btn').style.marginLeft = "0rem";
+            document.getElementById('company').style.display = "none";
+            document.getElementById('manager').style.display = "none";
+            document.getElementById('select').style.display = "none";
+            document.getElementById('email').style.display = "block";
+            document.getElementById('password').style.display = "block";
+            document.getElementById('name').style.display = "block";
+            count = 0;
+        }
+    else if (count == 2) {
+            document.getElementById('inner-div').style.width = "50%";
+            document.getElementById('process-round-3').style.backgroundColor = "#e5e5e5";
+            document.getElementById('next-btn').style.marginLeft = "7rem";
+            document.getElementById('company').style.display = "block";
+            document.getElementById('manager').style.display = "block";
+            document.getElementById('select').style.display = "block";
+            document.getElementById('exampleFormControlTextarea1').style.display = "none";
+            document.getElementById('prev-btn').style.display = "block";
+            document.getElementById('prev-btn').style.position = "absolute";
+            document.getElementById('next-btn').style.display = "block";
+            document.getElementById('send-btn').style.display = "none";
+            count = 1;
+    }
+        
+    }
+</script>
+
+</html>
