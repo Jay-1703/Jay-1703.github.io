@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./CSS/Style.css">
+</head>
+<body>
+
+    <div class="my-20">
+        <div class="flex justify-center text-[3rem] font-bold">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div id="alert">
+
+        </div>
+        <div class="flex justify-center">
+            <table class="h-80 w-80 text-center italic text-[1rem] font-bold mt-4 shadow-2xl">
+                <tbody id="table"></tbody>
+            </table>
+        </div>
+
+        <div class="flex justify-center">
+            <button onclick="getdata(this)" value="x" class="border border-gray-900 border-4 rounded-lg text-[30px] font-bold p-3 mt-10 w-20">x</button>
+            <button onclick="getdata(this)" value="o" class="border border-gray-900 border-4 rounded-lg text-[30px] font-bold p-2 mt-10 ml-10 w-20">o</button>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/abc8e57fdb.js" crossorigin="anonymous"></script>
+<script src="./JS/index.js"></script>
+</html>
