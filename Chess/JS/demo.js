@@ -43,12 +43,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 == 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img  src="${icon[j]}"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="${icon[j]}"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img  src="${icon[j]}"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="${icon[j]}"/></td>`;
                 id++;
             }
         }
@@ -57,12 +57,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 != 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img  src="./Image/Black_soldier.png"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="./Image/Black_soldier.png"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img  src="./Image/Black_soldier.png"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="./Image/Black_soldier.png"/></td>`;
                 id++;
             }
         }
@@ -71,12 +71,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 == 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img  src="./Image/White_soldier.png"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="./Image/White_soldier.png"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img  src="./Image/White_soldier.png"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="./Image/White_soldier.png"/></td>`;
                 id++;
             }
         }
@@ -85,12 +85,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 != 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img  src="${white_icon[j]}"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="${white_icon[j]}"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img  src="${white_icon[j]}"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="${white_icon[j]}"/></td>`;
                 id++;
             }
         }
@@ -141,6 +141,25 @@ for (let index = 0; index < board.length; index++) {
             _$(board[index][j]).setAttribute("onclick", "selectPossibleMoves(this)");
         else
             _$(board[index][j]).setAttribute("onclick", "place(this)");
+    }
+}
+
+function selectPlayer(e) {
+    if (e.value == "Black") {
+        player1 = e.value;
+        player2 = "White";
+        turn = player1;
+        _$("selectPlayer").style.visibility = "hidden";
+        _$("player1").innerHTML = player1;
+        _$("player2").innerHTML = player2;
+    }
+    else if (e.value == "White") {
+        player1 = e.value;
+        player2 = "Black";
+        turn = player1;
+        _$("selectPlayer").style.visibility = "hidden";
+        _$("player1").innerHTML = player1;
+        _$("player2").innerHTML = player2;
     }
 }
 
@@ -909,6 +928,7 @@ function possibleMovesForQueens(e) {
                            if (upSidePossibleMove == "Black") {
                                _$(board[index - n][i]).style.backgroundColor = "#90EE90";
                                possibleMoves.push(board[index - n][i]);
+                               n = board[index].length;
                            }
                            n < board[index].length ? n++ : n;
                         }
