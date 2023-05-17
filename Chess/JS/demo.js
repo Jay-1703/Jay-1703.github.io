@@ -43,12 +43,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 == 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="${icon[j]}"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="${icon[j]}"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="${icon[j]}"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="${icon[j]}"/></td>`;
                 id++;
             }
         }
@@ -57,12 +57,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 != 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="./Image/Black_soldier.png"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="./Image/Black_soldier.png"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="./Image/Black_soldier.png"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="./Image/Black_soldier.png"/></td>`;
                 id++;
             }
         }
@@ -71,12 +71,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 == 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="./Image/White_soldier.png"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="./Image/White_soldier.png"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="./Image/White_soldier.png"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="./Image/White_soldier.png"/></td>`;
                 id++;
             }
         }
@@ -85,12 +85,12 @@ for (let index = 0; index < board.length; index++) {
         for (let j = 0; j < icon.length; j++) {
             if (id % 2 != 0) {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img src="${white_icon[j]}"/></td>`;
+                <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="${white_icon[j]}"/></td>`;
                 id++;
             }
             else {
                 _$(`row${index}`).innerHTML += `
-                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img src="${white_icon[j]}"/></td>`;
+                <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light"  onclick="move(this)"><img class="w-24 h-10 lg:w-20 lg:h-16" src="${white_icon[j]}"/></td>`;
                 id++;
             }
         }
@@ -100,24 +100,24 @@ for (let index = 0; index < board.length; index++) {
             if (index % 2 == 0) {
                 if (id % 2 == 0) {
                     _$(`row${index}`).innerHTML += `
-                    <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark" onclick="move(this)"></td>`;
+                    <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark" onclick="move(this)"></td>`;
                     id++;
                 }
                 else {
                     _$(`row${index}`).innerHTML += `
-                    <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light" onclick="move(this)"></td>`;
+                    <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light" onclick="move(this)"></td>`;
                     id++;
                 }
             }
             else if (index % 2 != 0) {
                 if (id % 2 == 0) {
                     _$(`row${index}`).innerHTML += `
-                    <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light" onclick="move(this)"></td>`;
+                    <td class="bg-[#a3524e] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="light" onclick="move(this)"></td>`;
                     id++;
                 }
                 else {
                     _$(`row${index}`).innerHTML += `
-                    <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-14 h-14 sm:w-20 sm:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark" onclick="move(this)"></td>`;
+                    <td class="bg-[#d18b46] cursor-pointer border-black border-2 w-24 h-14 lg:w-20 lg:h-20 text-[30px] font-bold p-2 tile" id="${id}" data-block="dark" onclick="move(this)"></td>`;
                     id++;
                 }
             }
@@ -1227,7 +1227,7 @@ function place(e) {
 
     if (possibleMoves.indexOf(parseInt(e.id)) !== -1) {
         _$(selection).innerHTML = "";
-        _$(e.id).innerHTML = `<img  src="${image}"/>`;
+        _$(e.id).innerHTML = `<img src="${image}"/>`;
         let pieceType = _$(e.id).children[0] ? _$(e.id).children[0].getAttribute("src").replace("./Image/", "").replace(".png", "") : null;
 
         if (
